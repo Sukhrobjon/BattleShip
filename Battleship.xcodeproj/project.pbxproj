@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9781F04320A5A5CB003EDAD5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9781F04220A5A5CB003EDAD5 /* main.cpp */; };
+		9781F05020A5A600003EDAD5 /* Ship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9781F04920A5A600003EDAD5 /* Ship.cpp */; };
+		9781F05120A5A600003EDAD5 /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9781F04B20A5A600003EDAD5 /* Board.cpp */; };
+		9781F05220A5A600003EDAD5 /* PointCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9781F04C20A5A600003EDAD5 /* PointCollection.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,13 @@
 /* Begin PBXFileReference section */
 		9781F03F20A5A5CB003EDAD5 /* Battleship */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Battleship; sourceTree = BUILT_PRODUCTS_DIR; };
 		9781F04220A5A5CB003EDAD5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9781F04920A5A600003EDAD5 /* Ship.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ship.cpp; sourceTree = "<group>"; };
+		9781F04A20A5A600003EDAD5 /* PointCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointCollection.h; sourceTree = "<group>"; };
+		9781F04B20A5A600003EDAD5 /* Board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Board.cpp; sourceTree = "<group>"; };
+		9781F04C20A5A600003EDAD5 /* PointCollection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PointCollection.cpp; sourceTree = "<group>"; };
+		9781F04D20A5A600003EDAD5 /* Ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ship.h; sourceTree = "<group>"; };
+		9781F04E20A5A600003EDAD5 /* Point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point.h; sourceTree = "<group>"; };
+		9781F04F20A5A600003EDAD5 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +67,14 @@
 		9781F04120A5A5CB003EDAD5 /* Battleship */ = {
 			isa = PBXGroup;
 			children = (
+				9781F04B20A5A600003EDAD5 /* Board.cpp */,
+				9781F04F20A5A600003EDAD5 /* Board.h */,
 				9781F04220A5A5CB003EDAD5 /* main.cpp */,
+				9781F04E20A5A600003EDAD5 /* Point.h */,
+				9781F04C20A5A600003EDAD5 /* PointCollection.cpp */,
+				9781F04A20A5A600003EDAD5 /* PointCollection.h */,
+				9781F04920A5A600003EDAD5 /* Ship.cpp */,
+				9781F04D20A5A600003EDAD5 /* Ship.h */,
 			);
 			path = Battleship;
 			sourceTree = "<group>";
@@ -119,7 +136,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9781F05120A5A600003EDAD5 /* Board.cpp in Sources */,
 				9781F04320A5A5CB003EDAD5 /* main.cpp in Sources */,
+				9781F05220A5A600003EDAD5 /* PointCollection.cpp in Sources */,
+				9781F05020A5A600003EDAD5 /* Ship.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +253,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -241,6 +262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
